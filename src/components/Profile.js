@@ -21,6 +21,7 @@ class Profile extends React.Component {
 
   toggleEditBio = () => {
     const newShowEditBio = !this.state.showEdit;
+    // only need to include keys of state we're changing
     this.setState({ showEdit: newShowEditBio });
   }
 
@@ -30,7 +31,6 @@ class Profile extends React.Component {
   }
 
   render() {
-    console.log(this.props.person);
     return <div>
       {/* All profiles will have prof h's photo...for now */}
       <img src={profHPhoto} />
@@ -38,6 +38,8 @@ class Profile extends React.Component {
 
       {/* Only show the bio if showBio is set to true! */}
       { this.state.showBio ? <p>{ this.props.person.bio }</p> : null }
+
+      {/* Attach function to call when the button is clicked */}
       <button onClick={this.toggleBio}>{ this.state.showBio ? "Hide" : "Show" } Bio</button>
       <button onClick={this.toggleEditBio}>{ this.state.showEdit ? "Cancel" : "Edit Bio" }</button>
 
