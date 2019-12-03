@@ -1,7 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # Profile Frontend Mini-Example
-This is a mini React example to demonstrate some core React concepts for 67-272 at CMU.
+This is a mini React example to demonstrate some core React concepts for 67-272 at CMU. Full react + rails example [here](https://github.com/kdchin/profile-full)
 
 - State vs Props
 - Simple form
