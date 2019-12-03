@@ -14,6 +14,7 @@ class EditBio extends React.Component {
     this.setState({ bio: event.target.value });
   }
 
+  // why do we need this method?
   onSubmit = () => {
     this.props.onSubmit(this.state.bio);
   }
@@ -23,6 +24,8 @@ class EditBio extends React.Component {
       <h4>Edit Bio</h4>
       <input value={ this.state.bio } onChange={this.changeBio} />
       <button onClick={this.onSubmit}>Save</button>
+      {/* Alternatively: */}
+      {/* <button onClick={() => this.props.onSubmit(this.state.bio)}>Save</button> */}
     </div>
   }
 
