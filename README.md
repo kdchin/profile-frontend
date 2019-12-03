@@ -1,5 +1,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Profile Frontend Mini-Example
+This is a mini React example to demonstrate some core React concepts for 67-272 at CMU.
+
+- State vs Props
+- Simple form
+- Passing in functions to Child components ("lifting state up")
+
 ## Running the project
 
 In the project directory, you can run:

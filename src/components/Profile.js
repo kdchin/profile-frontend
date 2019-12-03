@@ -38,8 +38,6 @@ class Profile extends React.Component {
 
       {/* Only show the bio if showBio is set to true! */}
       { this.state.showBio ? <p>{ this.props.person.bio }</p> : null }
-
-      {/* Attach function to call when the button is clicked */}
       <button onClick={this.toggleBio}>{ this.state.showBio ? "Hide" : "Show" } Bio</button>
       <button onClick={this.toggleEditBio}>{ this.state.showEdit ? "Cancel" : "Edit Bio" }</button>
 
