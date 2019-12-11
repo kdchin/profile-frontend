@@ -50,7 +50,7 @@ class Profile extends React.Component {
 }
 
 Profile.propTypes = {
-  person: PropTypes.objectOf({
+  person: PropTypes.shape({
       id: PropTypes.number.isRequired,
       name: PropTypes.string.isRequired,
       bio: PropTypes.string.isRequired,
